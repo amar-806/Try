@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forms & input</title>
+    <style>
+    body{
+        background-color:chocolate;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #name{
+        color:black;
+    }
+    #message{
+    color:black;
+    }
+    #email{
+        color:black;
+    }
+    #gender{
+color:black;
+    }
+    #membership{
+        color:black;
+    }
+    #bodies{
+        color:black;
+    }
+    #age{
+        color:black;
+    }
+    #birthdate{
+        color:black;
+    }
+    </style>
+</head>
+<body>
+    <form action="process.php">
+        <div id="name"> 
+            <label for="name">Name</label><br>
+        <input type="text" id=name name="name">
+        </div>
+<div id="email">
+    <label for="email">Email</label> <br>
+    <input type="text" email id=email email="email" placeholder="enter your Email id">
+ </div>
+ <div id="message">
+     <label for="message">Message</label><br>
+     <textarea name="message" id="message" cols="30" rows="4"></textarea>
+ </div>
+ <div id="gender">
+     <label for="gender">Gender</label><br>
+    <select name="gender" id="Gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="others">Others</option>
+ </select>
+</div>
+<div id="age">
+    <label for="Age">Age</label><br>
+<input type="number" name=age id=age >
+</div>
+<div id="birthdate">
+    <label for="birthdate">Birthdate</label><br>
+    <input type="date" name="birthdate" id="birthdate">
+</div>
+<div id="membership">
+    <label for="membership">Membership</label><br>
+    <input type="radio" name= membership value='Broze' id="membership">Broze
+    <input type="radio" name= membership value='Silver' id="membership">Silver 
+    <input type="radio" name= membership value='Gold' id="membership">Gold
+    <div id="hobbies">
+        <label for="hobbies">Hobbies</label><br>
+        <input type="checkbox" name= hobbies value='Sports' id="hobbies">Sport
+        <input type="checkbox" name= hobbies value='Driving' id="hobbies">Driving 
+        <input type="checkbox" name= hobbies value='Swimming' id="hobbies">Swimming
+    </div>
+    <input type="submit" value="submit">
+    <button type="reset">Reset</button>
+    
+</form>
+    
+</body>
+</html>
